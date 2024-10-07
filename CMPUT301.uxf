@@ -1,15 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
-  <zoom_level>10</zoom_level>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>570</x>
-      <y>100</y>
-      <w>240</w>
-      <h>210</h>
-    </coordinates>
-    <panel_attributes>user
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>30</y><w>120</w><h>105</h></coordinates><panel_attributes>user
 --
 name: String
 email: String
@@ -18,118 +7,19 @@ roles: ArrayList&lt;Role&gt;
 checkIsEntrant: Boolean
 checkIsOrganizer: Boolean
 checkIsAdmin: Boolean
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>170</x>
-      <y>480</y>
-      <w>210</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>AdminRole
---</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>170</x>
-      <y>310</y>
-      <w>210</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>EntrantRole
---</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>170</x>
-      <y>630</y>
-      <w>290</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>Facility
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>220</y><w>105</w><h>40</h></coordinates><panel_attributes>AdminRole
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>135</y><w>105</w><h>35</h></coordinates><panel_attributes>EntrantRole
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>295</y><w>145</w><h>45</h></coordinates><panel_attributes>Facility
 --
-events: ArrayList&lt;Event&gt;</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>820</x>
-      <y>650</y>
-      <w>310</w>
-      <h>170</h>
-    </coordinates>
-    <panel_attributes>Event
+events: ArrayList&lt;Event&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>525</x><y>305</y><w>155</w><h>85</h></coordinates><panel_attributes>Event
 --
 facility: Facility
 entrants: ArrayList&lt;Entrant&gt;
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>450</x>
-      <y>670</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>315</y><w>195</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1
-m2=0..*</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;10.0;370.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>990</x>
-      <y>870</y>
-      <w>240</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>Is the Organizer allowed to change 
-facility after the events been made?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1040</x>
-      <y>810</y>
-      <w>30</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>550</x>
-      <y>630</y>
-      <w>170</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m1= ?</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>860</x>
-      <y>80</y>
-      <w>260</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>Ex:
+m2=0..*</panel_attributes><additional_attributes>10;10;190;10;370;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>610</x><y>415</y><w>120</w><h>30</h></coordinates><panel_attributes>Is the Organizer allowed to change 
+facility after the events been made?</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>635</x><y>385</y><w>15</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>295</y><w>85</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= ?</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>545</x><y>20</y><w>130</w><h>95</h></coordinates><panel_attributes>Ex:
 if(isEntrant){
 	profile1 = new Entrant()
 }
@@ -137,187 +27,22 @@ if(isEntrant){
 then when dealing with joining 
 events we use profile1 for entrants
 
-with organizing events we use profile2</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>800</x>
-      <y>120</y>
-      <w>80</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;40.0;60.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>170</x>
-      <y>390</y>
-      <w>210</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>OrganizerRole
+with organizing events we use profile2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>40</y><w>40</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;40;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>175</y><w>105</w><h>40</h></coordinates><panel_attributes>OrganizerRole
 --
-facilityList: ArrayList&lt;Facility&gt;</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>260</x>
-      <y>140</y>
-      <w>210</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>Role
+facilityList: ArrayList&lt;Facility&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>245</x><y>50</y><w>105</w><h>50</h></coordinates><panel_attributes>Role
 --
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>370</x>
-      <y>230</y>
-      <w>40</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>20.0;10.0;20.0;110.0;10.0;110.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>370</x>
-      <y>230</y>
-      <w>60</w>
-      <h>220</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>40.0;10.0;40.0;200.0;10.0;200.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>370</x>
-      <y>230</y>
-      <w>80</w>
-      <h>300</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>60.0;10.0;60.0;280.0;10.0;280.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>460</x>
-      <y>170</y>
-      <w>130</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1..3</panel_attributes>
-    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>80</x>
-      <y>410</y>
-      <w>760</w>
-      <h>360</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
-    <additional_attributes>740.0;340.0;10.0;340.0;10.0;10.0;90.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>70</x>
-      <y>80</y>
-      <w>190</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>110</x>
-      <y>440</y>
-      <w>80</w>
-      <h>260</h>
-    </coordinates>
-    <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>60.0;10.0;10.0;10.0;10.0;240.0;60.0;240.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>410</x>
-      <y>530</y>
-      <w>170</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>As an organizer I
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>95</y><w>20</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;10;20;110;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>95</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;40;200;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>95</y><w>40</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;60;280;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>345</x><y>65</y><w>65</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..3</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>155</x><y>185</y><w>380</w><h>180</h></coordinates><panel_attributes>lt=&lt;-&gt;</panel_attributes><additional_attributes>740;340;10;340;10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>20</y><w>95</w><h>15</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>200</y><w>40</w><h>130</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>60;10;10;10;10;240;60;240</additional_attributes></element><element><id>UMLNote</id><coordinates><x>320</x><y>245</y><w>85</w><h>35</h></coordinates><panel_attributes>As an organizer I
 want to create and 
-manage my facility profile</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>330</x>
-      <y>590</y>
-      <w>190</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;40.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>770</x>
-      <y>450</y>
-      <w>220</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes>EventList
+manage my facility profile</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>275</y><w>95</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;40;170;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>205</y><w>110</w><h>70</h></coordinates><panel_attributes>EventList
 --
 waitingList: ArrayList&lt;Entrant&gt;
 selectedList: ArrayList&lt;Entrant&gt;
 cancelList: ArrayList&lt;Entrant&gt;
 finalList: ArrayList&lt;Entrant&gt;
 --
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>890</x>
-      <y>580</y>
-      <w>40</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
-m1=1</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1090</x>
-      <y>440</y>
-      <w>430</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>waitingList - anyone thats signed up,
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>270</y><w>20</w><h>45</h></coordinates><panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+m1=1</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>660</x><y>200</y><w>215</w><h>75</h></coordinates><panel_attributes>waitingList - anyone thats signed up,
 but not cancelled users and not selected.
 Selected - anyone thats been selected(including confirmed 
 and unconfirmed but NOT people that have been cancelled)
@@ -325,18 +50,4 @@ cancelled - Anyone that has cancelled(can be
 from leaving waitingList and rejecting notification)
 finalList - list of people that were 
 selected and have accepted
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>980</x>
-      <y>500</y>
-      <w>130</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
-  </element>
-</diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>605</x><y>230</y><w>65</w><h>15</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element></diagram>
