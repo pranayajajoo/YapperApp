@@ -25,17 +25,17 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
-        android:layout_marginBottom="5dp" />
+ />
 
     <!-- Button Row -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:weightSum="2"
         android:paddingHorizontal="5dp"
-        android:paddingBottom="5dp">
+>
 
         <!-- Cancel Button -->
         <TextView
@@ -45,8 +45,7 @@
             android:layout_weight="1"
             android:text="Cancel"
             android:gravity="center"
-            android:layout_marginEnd="8dp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_vertical"/>
 
         <!-- Vertical Divider -->
         <View
@@ -62,7 +61,6 @@
             android:layout_weight="1"
             android:text="Join"
             android:gravity="center"
-            android:layout_marginStart="8dp"
             android:layout_gravity="center_vertical"/>
 
     </LinearLayout>
