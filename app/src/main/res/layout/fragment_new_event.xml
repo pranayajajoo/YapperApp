@@ -48,6 +48,8 @@
         android:layout_height="wrap_content"
         android:text="Choose Poster"
         android:textColor="#9C27B0"
+        android:textStyle="bold"
+        android:textSize="15dp"
         android:layout_gravity="center_horizontal"
         android:padding="8dp" />
 
