@@ -42,7 +42,6 @@
                     android:layout_marginEnd="80dp"
                     android:text="Change Profile Picture"
                     android:textColor="#712C95"
-                    android:textDecoration="underline"
                     android:textStyle="bold" />
 
                 <TextView
@@ -51,7 +50,6 @@
                     android:layout_height="wrap_content"
                     android:text="Remove Profile Picture"
                     android:textColor="#712C95"
-                    android:textDecoration="underline"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
